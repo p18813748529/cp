@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import axios from 'axios';
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  created(){
+    // setInterval(()=>{
+    //   var date = new Date();
+    //   var year = date.getFullYear();
+    //   var month = date.getMonth() + 1;
+    //   month = month > 9 ? month : '0'+month;
+    //   var day = date.getDate();
+    //   day = day > 9 ? day : '0'+day;
+    //   axios.get(`/api/static//data/${year}${month}${day}1HistoryLottery.json?_=${date.getTime()}`).then(res=>{
+    //     console.log(res)
+    //   })
+    // },3000)
   }
 }
 </script>
